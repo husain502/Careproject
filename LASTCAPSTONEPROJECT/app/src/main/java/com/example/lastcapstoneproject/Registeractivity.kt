@@ -55,7 +55,7 @@ class Registeractivity: AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
                 if (it.isSuccessful){
-                    Intent(this@Registeractivity, camera::class.java).also{
+                    Intent(this@Registeractivity, Homeactivity::class.java).also{
                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)
                     }
@@ -69,7 +69,7 @@ class Registeractivity: AppCompatActivity() {
     override fun onStart() {
         super.onStart()
     if(auth.currentUser != null){
-        Intent(this@Registeractivity, camera::class.java).also{
+        Intent(this@Registeractivity, Homeactivity::class.java).also{
             it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(it)
         }

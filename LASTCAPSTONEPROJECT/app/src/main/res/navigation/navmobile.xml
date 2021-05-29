@@ -2,8 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navmobile"
-    app:startDestination="@id/navhistory">
+    android:id="@+id/navgraph"
+    app:startDestination="@id/cameraFragment">
 
     <fragment
         android:id="@+id/navhistory"
@@ -15,4 +15,9 @@
         android:name="com.example.lastcapstoneproject.fragment.profilefragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profilefragment" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.lastcapstoneproject.fragment.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
 </navigation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lastcapstoneproject">
-    <uses-permission android:name="android.permission.INTERNET">
-
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.any" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Loginactivity" />
-        <activity android:name=".camera"></activity>
+        <activity android:name=".Homeactivity"></activity>
     </application>
 
 </manifest>
