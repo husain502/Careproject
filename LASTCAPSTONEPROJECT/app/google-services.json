@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882730130062",
+    "project_id": "care-780ca",
+    "storage_bucket": "care-780ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882730130062:android:7e58bc344404e735c507df",
+        "android_client_info": {
+          "package_name": "com.example.lastcapstoneproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882730130062-nkiob1ogiut01qiml9arrq6724m80j0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJXxPAu51rDz9IQ1PFiNz6LFP_SGMDgBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882730130062-nkiob1ogiut01qiml9arrq6724m80j0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

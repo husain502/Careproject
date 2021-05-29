@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navmobile"
+    app:startDestination="@id/navhistory">
+
+    <fragment
+        android:id="@+id/navhistory"
+        android:name="com.example.lastcapstoneproject.fragment.History"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navprofile"
+        android:name="com.example.lastcapstoneproject.fragment.profilefragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profilefragment" />
+</navigation>
