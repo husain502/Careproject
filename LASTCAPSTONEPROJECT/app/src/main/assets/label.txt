@@ -1,0 +1,8 @@
+apple
+banana
+bean
+bread
+carrot
+cheese
+egg
+sauce
