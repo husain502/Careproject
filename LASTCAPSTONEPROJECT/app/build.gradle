@@ -29,6 +29,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
+    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -45,6 +49,9 @@ dependencies {
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
 // CameraX View class
     implementation "androidx.camera:camera-view:1.0.0-alpha13"
+
+    // Tensorflow Lite
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
 
     //navgraph
     def nav_version = "2.3.0-rc01"
