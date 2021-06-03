@@ -1,7 +1,15 @@
 <resources>
-    <string name="app_name">LASTCAPSTONEPROJECT</string>
+    <string name="app_name">CARE (CAMERA CALORIES)</string>
     <string name="signup">REGISTER</string>
     <string name="next">Next</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //sign google
+    <string name="sign_in_with_google">Sign in With Google</string>
+    <string name="example">Example</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_out">Sign out</string>
 </resources>

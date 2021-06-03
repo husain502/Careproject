@@ -20,14 +20,13 @@
             android:id="@+id/logoregis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginLeft="165dp"
+            android:layout_marginBottom="32dp"
+            android:src="@mipmap/ic_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="150dp"
-            android:layout_marginBottom="32dp">
-        </ImageView>
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -88,6 +87,21 @@
             android:textStyle="bold"
             tools:layout_editor_absoluteX="156dp"
             tools:layout_editor_absoluteY="587dp" />
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="Sign in By Google" />
 
 
     </LinearLayout>

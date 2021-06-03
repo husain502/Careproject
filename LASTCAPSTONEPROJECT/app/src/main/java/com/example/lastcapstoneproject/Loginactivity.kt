@@ -42,6 +42,14 @@ class Loginactivity: AppCompatActivity() {
             }
 
             loginUser(email,password)
+
+
+            buttonregister.setOnClickListener{
+                Intent(this@Loginactivity, Registeractivity::class.java).also{
+                    startActivity(it)
+                }
+
+            }
         }
 
     }

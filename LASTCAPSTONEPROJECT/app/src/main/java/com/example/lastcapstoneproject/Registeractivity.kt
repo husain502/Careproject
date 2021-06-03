@@ -21,14 +21,14 @@ class Registeractivity: AppCompatActivity() {
         btnregister.setOnClickListener {
             val email = logemail.text.toString().trim()
             val password = logpassword.text.toString().trim()
-            val username = logusername.text.toString().trim()
+            val name = logusername.text.toString().trim()
 
             if(email.isEmpty()){
                 logemail.error = "Email harus terisi"
                 logemail.requestFocus()
                 return@setOnClickListener
             }
-            if (username.isEmpty()){
+            if (name.isEmpty()){
                 logusername.error = "username harus terisi"
                 logusername.requestFocus()
                 return@setOnClickListener
@@ -46,12 +46,21 @@ class Registeractivity: AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            registerUser(email,password)
+            registerUser(email,password,name)
+        }
+
+
+
+        buttonlogin.setOnClickListener{
+            Intent(this@Registeractivity, Loginactivity::class.java).also{
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
         }
 
     }
 
-    private fun registerUser(email: String, password: String) {
+    private fun registerUser(email: String, password: String,name: String) {
         auth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
                 if (it.isSuccessful){

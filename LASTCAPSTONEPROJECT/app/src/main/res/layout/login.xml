@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Loginactivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,11 +15,11 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@mipmap/ic_logo"
         app:layout_constraintBottom_toTopOf="@+id/usernameframeLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginLeft="135dp"
         android:layout_marginTop="200dp"
+        android:layout_gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,7 +77,7 @@
         </com.google.android.material.textfield.TextInputLayout>
     </FrameLayout>
 
-    <Button
+        <Button
         android:id="@+id/btnlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,23 +89,25 @@
         tools:layout_editor_absoluteY="602dp"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/forpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password?"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="523dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center"
+            android:text="Doesn’t have an account?"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="677dp" />
 
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Doesn’t have an account? Sign Up"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="677dp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SIGN UP"
+            android:id="@id/buttonregister">
+
+        </Button>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
