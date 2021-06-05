@@ -1,8 +1,8 @@
-apple
-banana
-bean
-bread
-carrot
-cheese
-egg
-sauce
+apple= 52Cal
+banana = 105Cal
+bean = 347Cal
+bread = 265Cal
+carrot= 41Cal
+cheese = 402Cal
+egg = 155Cal
+sauce= 11Cal

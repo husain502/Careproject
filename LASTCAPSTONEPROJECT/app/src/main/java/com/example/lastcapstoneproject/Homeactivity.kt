@@ -9,7 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.lastcapstoneproject.camera.Camera
+import com.example.lastcapstoneproject.tflite.ImageClassifier
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.home_activity.*
@@ -29,7 +29,7 @@ class Homeactivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         val appBarConfiguration = AppBarConfiguration.Builder(
-            R.id.navprofile, R.id.navhistory,R.id.cameraFragment)
+            R.id.navprofile, R.id.navhistory)
             .build()
 
         setupActionBarWithNavController(navController,appBarConfiguration)
@@ -38,8 +38,7 @@ class Homeactivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
        floatcamera.setOnClickListener{
-           Intent(this@Homeactivity, Camera::class.java).also {
-               it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+           Intent(this@Homeactivity, ImageClassifier::class.java).also {
                startActivity(it)
            }
        }

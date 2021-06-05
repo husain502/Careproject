@@ -46,7 +46,8 @@ class Loginactivity: AppCompatActivity() {
 
             buttonregister.setOnClickListener{
                 Intent(this@Loginactivity, Registeractivity::class.java).also{
-                    startActivity(it)
+                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
                 }
 
             }
@@ -59,8 +60,7 @@ class Loginactivity: AppCompatActivity() {
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
                     Intent(this@Loginactivity, Homeactivity::class.java).also{
-                        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                        startActivity(it)
+                        startActivity(intent)
                     }
                 }else {
                     Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()

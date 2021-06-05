@@ -39,10 +39,6 @@ class profilefragment : Fragment() {
 
 
 
-        sign_out_btn.setOnClickListener{
-            auth.signOut()
-
-        }
 
 
 }

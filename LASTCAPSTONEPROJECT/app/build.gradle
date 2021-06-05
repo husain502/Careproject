@@ -3,6 +3,8 @@ apply plugin:'kotlin-android'
 apply plugin:'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: "kotlin-kapt"
+
 
 
 android {
@@ -31,13 +33,15 @@ android {
     }
     aaptOptions {
         noCompress "tflite"
-        noCompress "lite"
     }
     kotlinOptions {
         jvmTarget = '1.8'
     }
     buildFeatures {
         mlModelBinding true
+    }
+    dataBinding{
+        enabled = true
     }
 }
 
@@ -48,6 +52,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0-rc1'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0-rc1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     //camerax
     def camerax_version = "1.0.0-beta06"
 // CameraX core library using camera2 implementation
@@ -84,6 +90,8 @@ dependencies {
 
     //Circle image
     implementation 'de.hdodenhof:circleimageview:2.1.0'
+    //Camera Detection
+    implementation 'com.google.mlkit:object-detection:16.2.5'
 
 
     //activity depcreated
