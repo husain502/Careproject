@@ -12,7 +12,7 @@
     <string name="name">Name</string>
     <string name="email_address">Email address</string>
     <string name="sign_out">Sign out</string>
-    <string name="petunjuk">After you upload the image, just the image ti get the calories measurement</string>
+    <string name="petunjuk">After you upload the image, just touch your food to get the calories information</string>
     <string name="identitas">Bangkit B21-CAP0457</string>
     <string name="tagline">Your Calories, Our Care</string>
 </resources>
