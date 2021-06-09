@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Download the `.apk` file from
    [here](https://drive.google.com/file/d/1Hq1V6Lc0kVPFEsF1A5qZWxG7AO1Ku6QD/view?usp=sharing) and install it on your phone.
-2. See the Jupyter notebook [here](https://colab.research.google.com/github/husain502/Careproject/blob/master/Capstone%20Project.ipynb) and run all the cells.
+2. See the Jupyter notebook [here](https://colab.research.google.com/github/husain502/Careproject/blob/master/ML/notebooks/CapstoneProject.ipynb) and run all the cells.
 
 ## Usage
 
