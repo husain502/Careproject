@@ -2,7 +2,7 @@
 
 > CARE is an Android-based application that can recognize several categories of foods and tell the calories the food provided.
 
-**This project was developed as a capstone project for Google Bangkit 2021 program by team B21-CAP0457**
+This project was developed as a capstone project for Google Bangkit 2021 program by team B21-CAP0457
 
 ### Team Member
 
@@ -28,13 +28,14 @@ To get a local copy up and running follow these simple steps.
    git clone https://github.com/husain502/Careproject.git
    ```
 
-2. Install the Master packages
+2. Go to the Android folder and compile the application.
+3. Go to the ML folder, download the data, and run the notebook.
 
 ### Quick Installation
 
 1. Download the `.apk` file from
    [here](https://drive.google.com/file/d/1Hq1V6Lc0kVPFEsF1A5qZWxG7AO1Ku6QD/view?usp=sharing) and install it on your phone.
-2. See the Jupyter notebook [here](https://colab.research.google.com/github/husain502/Careproject/blob/master/Capstone%20Project.ipynb) and run all the cells.
+2. See the Jupyter notebook [here](https://colab.research.google.com/github/husain502/Careproject/blob/master/ML/notebooks/CapstoneProject.ipynb) and run all the cells.
 
 ## Usage
 
@@ -56,7 +57,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Contact
 
-Ahmad Husain - <a2892643@bangkit.academy>
+Ahmad Husain - <A2892643@bangkit.academy>
 
 Project Link: [https://github.com/husain502/Careproject](https://github.com/husain502/Careproject)
 
